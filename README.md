@@ -198,9 +198,9 @@ Após a execução dos cinco cenários, foi possível observar o comportamento d
 | ID | Cenário | Entrada utilizada | Resultado esperado | Resultado obtido | Status |
 |---|---|---|---|---|---|
 | CT01 | Login válido | E-mail e senha corretos | HTTP 200 + token | HTTP 200 OK + access_token | OK |
-| CT02 | Senha incorreta | E-mail correto e senha errada | Erro de autenticação | HTTP 400 | OK |
-| CT03 | Usuário inexistente | E-mail não cadastrado | Acesso negado | HTTP 400 - invalid_credentials | OK |
-| CT04 | Campos vazios | E-mail e senha vazios | Erro de validação | HTTP 400 - validation_failed | OK |
+| CT02 | Senha Errada | E-mail correto e senha errada | Erro de autenticação | HTTP 400 | OK |
+| CT03 | Usuário Inválido | E-mail não cadastrado | Acesso negado | HTTP 400 - invalid_credentials | OK |
+| CT04 | Campos Sem Nada | E-mail e senha vazios | Erro de validação | HTTP 400 - validation_failed | OK |
 | CT05 | Credenciais inválidas | E-mail em formato inválido | Erro de autenticação | HTTP 400 - invalid_credentials | OK |
 
 ### 7.2 Análise dos resultados
